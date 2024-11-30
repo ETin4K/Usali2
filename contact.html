@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usali - Contact Us</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <meta name="description" content="Get in touch with us at Usali. We're here to help with any questions or concerns you may have.">
+  <meta name="keywords" content="Alibaba, contact us, online shopping, e-commerce, Usali">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="top-header">
+    <img src="Usali.png" alt="US Based">
+    <div class="search-container">  
+      <form action="products.html" method="get">  
+         <input type="search" id="search" name="search" placeholder="Search products...">  
+         <button class="search-button" type="submit">Search</button>  
+         <a href="products.html" class="buy-now-button">BUY NOW</a>  
+      </form>  
+   </div>
+  </header>
+  <header>
+   <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+   <section>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or concerns, please don't hesitate to reach out to us. We're here to help.</p>
+    <div class="container">
+      <h1>Enter contact info to get great deals</h1>
+      <form id="contact-form" method="post" action="emailcontact.php">
+       <div class="form-group">
+         <label for="first-name">First Name:</label>
+         <input type="text" id="first-name" name="first-name" required>
+       </div>
+       <div class="form-group">
+         <label for="last-name">Last Name:</label>
+         <input type="text" id="last-name" name="last-name" required>
+       </div>
+       <div class="form-group">
+         <label for="email">Email Address:</label>
+         <input type="email" id="email" name="email" required>
+       </div>
+       <div class="form-group">
+         <label for="subject">Subject:</label>
+         <input type="text" id="subject" name="subject" required>
+       </div>
+       <div class="form-group">
+         <label for="birth-day">Birth Day:</label>
+         <input type="date" id="date" name="date" required>
+       </div>
+       <div class="form-group">
+         <label for="phone">Phone:</label>
+         <input type="tel" id="phone" name="phone" required>
+       </div>
+       <div class="form-group">
+         <label for="comments">Comments</label>
+         <textarea id="comments" name="comments" required></textarea>
+       </div>
+       <button type="submit">Submit</button>
+      </form>
+     </div>
+    </section>
+  </main>
+  <footer>
+   <p>&copy; 2024 Usali. All rights reserved.</p>
+  </footer>
+</body>
+</html>

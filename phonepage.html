@@ -1,0 +1,64 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Usali - Checkout</title>  
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
+  <meta name="description" content="Checkout page for Product 2 on Usali">  
+  <meta name="keywords" content="Usali, Product 2, checkout, online shopping, e-commerce">  
+  <link rel="stylesheet" href="styles/styles.css">  
+</head>  
+<body>  
+  <header class="top-header">  
+   <img src="Usali.png" alt="US Based">  
+   <div class="search-container">  
+    <form action="products.html" method="get">  
+       <input type="search" id="search" name="search" placeholder="Search products...">  
+       <button class="search-button" type="submit">Search</button>  
+       <a href="products.html" class="buy-now-button">BUY NOW</a>  
+    </form>  
+ </div>
+  </header>  
+  <header>  
+  <nav>  
+   <ul>  
+    <li><a href="index.html">Home</a></li>  
+    <li><a href="products.html">Products</a></li>  
+    <li><a href="about.html">About Us</a></li>  
+    <li><a href="contact.html">Contact Us</a></li>  
+   </ul>  
+  </nav>  
+  </header>  
+  <main>  
+  <section>  
+   <h1>Checkout</h1>  
+   <div class="product-info">  
+    <img src="images/phone.jpg" alt="clear">  
+    <h2>HaiWue Phone (S24)</h2>  
+    <p>This is an internationally unlocked phone.<br> To use this phone in the united states you must have at&t for service to work.<br> This phone is a clone of the Samsung Galaxy S24</p>  
+    <p class="price">Price: $<ouput name="total" for="quantity">399.99</ouput></p>  
+   </div>  
+   <div class="checkout-form">  
+    <form oniput="total.value = quantity.value" *399.99>  
+      <div class="form-group">  
+       <label for="quantity">Quantity:</label>  
+       <input type="number" id="quantity" name="quantity" value="1" min="1">  
+      </div>  
+      <div class="form-group">  
+       <label for="shipping">Shipping:</label>  
+       <select id="shipping" name="shipping">  
+        <option value="standard">Standard Shipping ($5.99)</option>  
+        <option value="express">Express Shipping ($9.99)</option>  
+       </select>  
+      </div>  
+      <button class="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="19.99" data-product-image="product-image.jpg">Add to Cart</button>  
+    </form>  
+   </div>  
+  </section>  
+  </main>  
+  <footer>  
+  <p>&copy; 2024 Usali. All rights reserved.</p>  
+  </footer>
+</body>  
+</html>
